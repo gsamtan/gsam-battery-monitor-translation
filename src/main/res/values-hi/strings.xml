@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="app_name">GSam बैटरी मॉनिटर</string>
+
+    <!-- Notification & Header messages -->
+    <string name="battery_status_time_left">शेष समय: %1$02d:%2$02d (औसत), %3$02d:%4$02d (पिछले %5$sm)</string>
+    <string name="battery_status_time_left_no_running">शेष समय: %1$02d:%2$02d</string>
+    <string name="battery_status_time_left_unknown">शेष समय: गणना जारी है - बाद में जांचें</string>
+    <string name="battery_status_time_to_full">पूर्ण होने के लिए समय: %1$02d:%2$02d</string>
+    <string name="battery_status_time_to_full_unknown">पूर्ण होने के लिए समय: गणना जारी है - बाद में जांचें</string>
+    <string name="battery_status_title">बैटरी की स्थिति - %1$s%% (%2$s)</string>
+    <string name="battery_status_title_charging">बैटरी की स्थिति - %1$s%% (%2$s) - चार्ज जारी है</string>
+    <string name="battery_status_title_full">बैटरी की स्थिति - %1$s%% (%2$s) - पूर्ण</string>
+
+    <!-- Preferences -->
+    <string name="preferences_general_category">सामान्य प्राथमिकताएं</string>
+    <string name="preferences_theme_category">रूपरंग</string>
+    <string name="preferences_alarm_category">चेतावनी</string>
+    <string name="preferences_startup_service_title">डिवाइस चालू होते ही निगरानी रखें</string>
+    <string name="preferences_startup_service_sum">डिवाइस चालू होते ही बैटरी की निगरानी रखें</string>
+    <string name="preferences_temperature_title">तापमान सेल्सीयस में</string>
+    <string name="preferences_show_notification_icon_title">अधिसूचना चिह्न दिखायें</string>
+    <string name="preferences_show_notification_icon_sum" tools:ignore="StringFormatInvalid">अधिसूचना पट्टी में % अधिसूचना चिह्न दिखायें</string>
+    <string name="preferences_show_notification_title">मात्र अधिसूचना दिखायें</string>
+    <string name="preferences_show_notification_sum">अधिसूचना बिना अधिसूचना चिह्न के दिखायें</string>
+    <!-- preferences_show_notification_lockscreen_title is not used yet... -->
+    <string name="preferences_show_notification_lockscreen_title">लॉक स्क्रीन पर अधिसूचना दिखायें</string>
+    <string name="preferences_alarm_condition_charging">बैटरी ऊपर</string>
+    <string name="preferences_alarm_condition_discharging">बैटरी नीचे</string>
+    <string name="preferences_alarm_condition_overheated">बैटरी अतितप्त</string>
+    <string name="preferences_alarm_condition_overvoltage">बैटरी अतिवोल्टेज</string>
+    <string name="preferences_alarm_condition_temperature">तापमान ऊपर</string>
+    <string name="preferences_alarm_select_percent">बैटरी प्रतिशत</string>
+    <string name="preferences_alarm_select_temperature">बैटरी तापमान</string>
+    <string name="preferences_alarm_select_tone">अधिसूचना स्वर का चयन</string>
+    <string name="preferences_theme_title">बैटरी चिह्न का रूपरंग</string>
+    <string name="preferences_theme_sum">बैटरी चिह्न की बनावट का चयन करें</string>
+    <string name="preferences_theme_getmore_title">अधिक रूपरंग पायें</string>
+    <string name="preferences_theme_getmore_msg">यह और अधिक बैटरी मॉनिटर के रूपरंगों की खोज करेगा। GSam लैब्स सभी रूपरंगों को नियंत्रित या मंजूर नहीं करता, इसलिए यदि रूपरंग काम नहीं करता है तो रूपरंग के डेवलपर से संपर्क करें।\n\nरूपरंग को डाउनलोड और स्थापित करें फ़िर उपलब्ध रूपरंगों को देखने के लिए पुनः इस मेनू पर आयें।\n\nक्या आप जानते हैं कि आप स्वयं अपना रूपरंग बना सकते हैं? जानकारी के लिए http://badassbatterymonitor.blogspot.com देखें!</string>
+    <string name="preferences_theme_progress_title">रूपरंग लाये जा रहे हैं</string>
+    <string name="preferences_theme_progress_msg">उपलब्ध रूपरंगों की सूची लाई जा रही है\u2026</string>
+    <string name="preferences_widget_back_title">Transparent Widget Background</string>
+    <string name="preferences_widget_back_msg">Make the widget background completely transparent, allowing your wallpaper to show through.</string>
+    <string name="preferences_widget_show_timeleft_title">Show Time Remaining</string>
+    <string name="preferences_widget_show_temp_title">Show Temperature</string>
+    <string name="preferences_widget_show_voltage_title">Show Voltage</string>
+    <string name="preferences_overlay_icon_sum">Overlay the stock battery icon.  Location, size, etc. are all fully configurable.</string>
+    <string name="preferences_overlay_icon_title">Overlay Standard Battery Icon</string>
+    <string name="preferences_overlay_icon_configure_sum">Configure the overlay icon\'s size, location, background color, brightness, and more.</string>
+    <string name="preferences_overlay_icon_configure_title">Configure Overlay Icon</string>
+    <string name="preferences_overlay_icon_configure_invalid">Unable to launch configuration.  Open the icon pack manually to configure.</string>
+    <string name="preferences_overlay_icon_notvalid_title">Selected Theme Doesn\'t Support Overlay Icons</string>
+    <string name="preferences_overlay_icon_notvalid_msg">Select a different theme, and try again.\n\nOverlay Icons are only supported by external Icon Packs.  Select Get More Themes from the Battery Icon Theme menu to find an external icon pack.  All Icon Packs provided by GSam Labs support overlay icons.  Third party icon packs may not support overlays.</string>
+    <string name="preferences_show_charging_animation_title">Show animation while charging</string> 
+    <string name="preferences_widget_color_screen_title">Battery Widget Settings</string>
+    <string name="preferences_app_theme_title">Use Dark App Theme</string>
+    <string name="preferences_app_theme_title2">App Theme</string>
+    <string name="preferences_app_theme_split">Toolbar On Bottom</string>
+    <string name="preferences_time_left_title">Calculate Time Left</string>
+    <string name="preferences_time_left_sum">Calculate time left based on the usage over this time scale.</string>
+    <string name="preferences_profiles_screen_title">Device Power Profiles</string>
+    <string name="preferences_power_profiles_use_stock_title">Enable Custom Profile</string>
+    <string name="preferences_power_profiles_edit_title">Edit Power Profile</string>
+    <string name="preferences_profiles_screen_summary">Advanced - Edit the power usage profiles used to calculate all values</string>
+    <string name="preferences_power_per_percent_reset_title">Reset Time Remaining Estimates</string>
+    <string name="preferences_power_per_percent_reset_summary">Reset the time remaining estimates.  Use this if your time remaining is not accurate.  Currently %1$s / percent calculated over %2$01d percentages</string>
+    <string name="preferences_power_per_percent_dlgtext">Comma separated in the form POWER_USED_PER_PERCENT_DROP,TOTAL_PERCENT_MEASURED.  This value is constantly updated - the longer you run, the more accurate it gets.  Whenever you change a Power Profile setting however, you should clear this field, and let the app regenerate.</string>   
+    <string name="preferences_power_per_percent_reset">Reset</string>
+    <string name="preferences_time_per_percent_title">Reset Time Discharge History</string>
+    <string name="preferences_time_per_percent_unkown">unknown</string>
+    <string name="preferences_time_per_percent_summary">Reset the calculated value for average amount of time your device lasts for a full battery cycle. Currently %1$s (%2$sm / percent calculated over %3$01d percentages)</string>
+    <string name="preferences_stats_since_title">View Statistics Since</string>
+    <string name="preferences_stats_since_summary">View statistics since last unplugged, or since last full charge</string>
+    <string name="preferences_power_profiles_edit_summary">Customize your power profile.  The custom values will only be used if the custom profile is enabled.</string>
+    <string name="profedit_title">Modify the values below to change how your time remaining and App Sucker times are calculated</string>
+    <string name="profedit_load_basedon">Reload Data Based On:</string>
+    <string name="profedit_save">Save</string>
+    <string name="profedit_cancel">Cancel</string>
+    <string name="profedit_custom_values_saves">Saved custom values.  You may re-enable manufacturing defaults in the preferences screen.</string>
+    <string name="preferences_clear_chart_history_title">Clear Chart History File</string>
+    <string name="preferences_clear_chart_history_sum">Click here to clear the local cached file for chart history.</string>
+    <string name="preferences_clear_chart_history_toast">History file has been cleared\u2026</string>
+    <string name="preferences_clear_chart_history_alert">Are you sure?</string>
+    <string name="preferences_clear_history_stats_title">Reset Battery Stats</string>
+    <string name="preferences_clear_history_stats_sum">Click here to reset the battery statistics.  This will remove all statistic history.  It\'s equivalent to doing a full charge and unplug.  All statistics are reset relative to this point, so use with caution!</string>
+    <string name="preferences_clear_history_stats_toast">All battery statistics have been cleared\u2026</string>
+    <string name="preferences_clear_history_stats_error_toast">Unable to reset statistics - this device may not support this function\u2026</string>
+    <string name="preferences_custom_ref">The battery history will be based off of a custom reference point created now (or when the device gets unplugged).  This can be used to determine what has used your battery since this specific point in time rather than since last unplugged or last charged. </string>
+    <string name="preferences_custom_ref_plugged">The device is currently charging - you may only create a custom reference when the device is unplugged.</string>
+    <string name="preferences_send_anon_stats_title">Allow Anonymous Usage Statistics</string>
+    <string name="preferences_send_anon_stats_sum">Allow sending of anonymous usage statistics.  No identifiable or private data is sent.</string>
+    <string name="preferences_show_ads_title">Show Ads</string>
+    <string name="preferences_show_ads_sum">Show ads in the main screen.</string>
+    <string name="preferences_override_lang_title">Language</string>
+    <string name="preferences_override_lang_sum">Use a language other than your default system language.</string>
+    <string name="preferences_power_profiles_include_sensors_title">Include Sensors In Calculation</string>
+    <string name="preferences_power_profiles_include_sensors_sum">"Some devices don't calculate sensor usage correctly.  Uncheck this if your apps sensor usage seems inaccurate (accelerometer in particular). "</string>
+    <string name="preferences_power_profiles_include_audio_title">Include Audio In Calculation</string>
+    <string name="preferences_power_profiles_include_audio_sum">"Some devices don't calculate audio usage correctly.  Uncheck this if your apps audio usage seems inaccurate (media/audioserver app in particular). "</string>
+    <string name="preferences_power_profiles_include_sensors_dlg_title">Reset Power Per Percent</string>
+    <string name="preferences_power_profiles_include_sensors_dlg_msg">This will reset your power per percent calculation.  Do you wish to continue?</string>
+    <string name="preferences_widget_dialog_title">Pick A Color</string>
+    <string name="preferences_widget_color_full_title">Color At 100%</string>
+    <string name="preferences_widget_color_middle_title">Color At 50%</string>
+    <string name="preferences_widget_color_empty_title">Color At 0%</string>
+    <string name="preferences_widget_color_alpha_title">Color Transparency</string>
+    <string name="preferences_widget_color_preview_title">Preview Percent</string>
+    <string name="preferences_widget_color_preview_sum">Set the percent full value of the battery preview below.</string>
+    <string name="preferences_widget_color_screen_sum">Set the color gradient of the battery view, and control the widget settings</string>
+    <string name="preferences_widget_color_category">Colors</string>
+    <string name="preferences_widget_general_category">General</string>
+    <string name="preferences_start_foreground_title">High Priority</string>
+    <string name="preferences_start_foreground_sum">Run the battery monitor using a high priority.  Use this only if your icons are not getting updated properly to reflect the proper battery percentage.  Do not enable this otherwise as it will affect how many resources are available to other applications. </string>
+    <string name="preferences_menu_add_alarm">Add New Alarm</string>
+    <string name="preferences_menu_remove_alarm">Remove Alarm</string>
+    <string name="preferences_disable_animation_title">Disable animation effects</string>
+    <string name="preferences_disable_animation_sum">Disables screen animation for slower devices.</string>
+    <string name="preferences_contains_telephony_support_title">Contains phone or data modem</string>
+    <string name="preferences_contains_telephony_support_sum">Some devices report telephony (phone / 3G / 4G / LTE) incorrectly - especially tablets.  Modify this only if the reported value is not correct.  Reported value:  %1s</string>
+    
+    <!-- Preference Selection Arrays -->    
+    <string name="icon_themes_circle">Circle</string>   
+    <string name="icon_themes_icsmono">Monochrome</string>   
+    <string name="icon_themes_trad">Traditional</string>   
+    <string name="icon_themes_default">System Default</string>   
+    <string name="icon_themes_getmore">Get More Themes</string>
+    <string name="time_left_calc_dontshow">Don\'t Show Scaled Time</string>
+    <string name="time_left_calc_last5">Last 5 Minutes</string>
+    <string name="time_left_calc_last15">Last 15 Minutes</string>
+    <string name="time_left_calc_last30">Last 30 Minutes</string>
+    <string name="time_left_calc_last60">Last 60 Minutes</string>
+    <string name="stats_since_unplugged">Since Last Unplugged</string>
+    <string name="stats_since_charged">Since Last Full Charge</string>
+    <string name="stats_since_custom">Since Custom Reference</string>
+    <string name="stats_since_screen_off">Since Screen Off</string>
+    <string name="stats_since_now">Since Now</string>
+    <string name="stats_since_ago">Since %1s Ago</string>
+    <string name="pwer_profiles_mfg">Manufacturers Values</string>
+    <string name="pwer_profiles_saved">Current Saved Values</string>
+
+    <!-- App Sucker -->
+    <string name="process_kernel_label">Kernel (Android OS)</string>
+    <string name="process_suck_mon_android_system">System (%1s)</string>
+    <string name="process_suck_mon_header">%0$.1f%% of battery consumed by:</string>
+    <string name="process_suck_mon_nodata">No data available.  There are no apps that have consumed the specified resource during the last device power cycle.</string>
+    <string name="process_suck_mon_title_prefix">App Sucker - %1$s</string>
+    <!-- Suffix gets 'stats_since_X' replaced -->
+    <string name="process_suck_mon_title_suffix">%1$s (%2$s)</string>
+    <string name="procsuckmon_viewby_pwr">View % Power Used</string>
+    <string name="procsuckmon_viewby_pwr_minforeground">View % Power (Background CPU Only)</string>
+    <string name="procsuckmon_viewby_cpu">View CPU Minutes Used</string>
+    <string name="procsuckmon_viewby_cpu_minforeground">View CPU (Background CPU Only)</string>
+    <string name="procsuckmon_viewby_data">View Network Data Used</string>
+    <string name="procsuckmon_viewby_sensor">View Sensor Time Used</string>
+    <string name="procsuckmon_viewby_awake">View Time Held Awake</string>
+    <string name="procsuckmon_viewby_wake_times">View Num Times Waking Device</string>
+    <string name="procsuckmon_viewby_gps">View GPS Time Used</string>
+    <string name="procsuckmon_viewby_kernel_wakelocks">View Kernel Wakelocks</string>
+    <string name="procsuckmon_wakelock_user_apps">Combined App Wakelocks (non-Kernel)</string>
+    <string name="procsuckmon_unacounted_cpu_label">Combined App CPU</string>
+    <string name="procsuckmon_unacounted_cpu_title">What Does This Mean?</string>
+    <string name="procsuckmon_unacounted_cpu_text">
+        Consider enabling more stats to avoid this message via Menu -> More -> Enable More Stats&lt;BR/>&lt;BR/>
+        Android N doesn\'t permit apps to gather the CPU utilization of other apps, and therefore GSam can\'t distinguish which app is responsible for the system CPU utilization.
+        Instead, GSam puts all CPU utilization in this one bucket so it\'s clear that apps are consuming resources.  GSam is still able to track other battery drainers such as network usage, etc.&lt;P>
+        If this is important to you, you can enable more stats (Menu -> More -> Enable More Stats), or &lt;b>star&lt;/b> the &lt;a href=\"https://code.google.com/p/android/issues/detail?id=211629\">this issue&lt;/a> in the Android issue tracker.&lt;p>
+        &lt;B>Please do NOT add a comment to the issue tracker&lt;/B> - this will only annoy the Android development team.  Instead, simply hit the Star icon to show that you care about it.  There is no point in adding \'Me Too\'
+        or yelling at the Android Development team in any way.  What they have done here is actually GOOD for security - they just haven\'t provided an alternate secure path for apps such as GSam.
+    </string>
+
+    <!-- Main screen -->
+    <string name="main_history_button">History</string>
+    <string name="main_preferences_button">Preferences</string>
+    <string name="main_calculating">Calculating\u2026</string>
+    <string name="main_full">Full</string>
+    <string name="main_timeremaining">Time Remaining</string>
+    <string name="main_timetofull2">To Full:</string>
+    <string name="main_timetofull_tablet2">To Full Charge:</string>
+    <string name="main_timeleft2">Average:</string>
+    <string name="main_timeleft_tablet2">Average Usage:</string>
+    <string name="main_timeleft_rolling2">Last %1$sm:</string>
+    <string name="main_timeleft_rolling_tablet2">Last %1$sm Usage:</string>
+    <string name="main_talktime2">Talk Time:</string>
+    <string name="main_temp">Temperature: </string>
+    <string name="main_voltage">Voltage: </string>
+    <string name="main_health">Type / Health: </string>
+    <string name="main_health_cold">Cold</string>
+    <string name="main_health_dead">Dead</string>
+    <string name="main_health_good">Good</string>
+    <string name="main_health_hot">Hot</string>
+    <string name="main_health_over_voltage">Over Voltage</string>
+    <string name="main_health_unknown">Unknown</string>
+    <string name="main_health_failed">Failed</string>
+    <string name="main_usage_label">Battery Usage - %1$s%% (%2$02d:%3$02d:%4$02d)</string>
+    <string name="main_usage_label2">Used %1$s%% in %2$s</string>
+    <string name="main_usage_label_active_standby">\u0394 %1$.1f%%/h - %2$s Active, %3$s Standby</string>
+    <string name="main_usage_label_active">\u0394 %1$.1f%%/h - %2$s Active</string>
+    <string name="main_phone_on_label">Phone:</string>
+    <string name="main_screen_on_label">Screen:</string>
+    <string name="main_phone_radio_on_label">Phone Radio:</string>
+    <string name="main_wifi_active_label">Wifi Active:</string>
+    <string name="main_idle_label">Held Awake:</string>
+    <string name="main_bluetooth_label">Bluetooth:</string>
+    <string name="main_app_usage_label">App Usage:</string>
+    <string name="main_app_usage_button">App Sucker</string>
+    <string name="main_android_batt_usage_button">Battery Use - Built In</string>    
+    <string name="main_android_batt_usage_failed">Unable to launch the built in battery usage screen...</string>
+    <string name="main_tools_menu">More</string>
+    <string name="main_menu_charts">Charts</string>
+    <string name="menu_whatsnew">What\'s New</string>
+    <string name="about_about">About</string>
+    <string name="menu_set_custom_ref">Set Custom Reference</string>
+    <string name="menu_remove_custom_ref">Remove Custom Reference</string>
+    <string name="menu_refresh">Refresh</string>
+    <string name="main_refresh_toast">Statistics Refreshed\u2026</string>
+    <string name="main_market_nomarket_msg">Function not available.  There does not appear to be a market application installed on your device.</string>
+    <string name="menu_help">Help</string>
+    <string name="menu_send_debug_data">Send error report</string>    
+    <string name="menu_send_debug_data_dlg_title">Send Error Report Using:</string>
+    <string name="menu_send_debug_data_subject">GSam Labs - Battery Monitor - Error Report</string>  
+    <string name="menu_send_debug_data_body">Please enter a description of the problem you encountered:\n\n</string> 
+    <string name="menu_review">Review GSam Battery Monitor</string>
+    <string name="menu_enable_more_stats">Enable More Stats</string>
+    <string name="main_share_intentchoosertitle">Share my average battery life\u2026</string>
+    <string name="main_share_subject">Average Battery Life - GSam Battery Monitor</string>
+    <string name="main_share_msg2">My %1$s %2$s battery averages %3$s (%4$s active usage) on a single charge. Check out GSam Battery Monitor: - http://bit.ly/uHT7Vy  #badassbattery</string>
+    <string name="main_share_msg">My %1$s %2$s battery averages %3$s on a single charge. Check out GSam Battery Monitor monitor - http://bit.ly/uHT7Vy #badassbattery</string>
+    <string name="main_tablet_battusage_unplug">%1$s%% Used Over %2$s (Since Last Unplugged)</string>
+    <string name="main_tablet_battusage_fullcharge">%1$s%% Used Over %2$s (Since Full Charge)</string>
+    <string name="main_tablet_battusage_customref">%1$s%% Used Over %2$s (Since Custom Reference)</string>
+    <string name="main_tablet_active_usage">Active (%1$02d:%2$02d:%3$02d)</string>
+    <string name="main_tablet_standby_usage">Standby (%1$02d:%2$02d:%3$02d)</string>    
+    <string name="rate_me_title">Rate GSam Battery Monitor</string>
+    <string name="rate_me_msg">Do you like GSam Battery Monitor?  Please take the time to give the app a good rating!\n\nDon\'t worry - you won\'t be asked again.</string>
+    <string name="rate_me_ok">Rate It!</string>
+    <string name="main_header_type">Type</string>
+    <string name="main_header_time">Time</string>
+    <string name="main_header_power">Power</string>
+    <string name="averages_since">Since %1$s</string>
+    <string name="averages_header">Averages Per Complete Charge</string>
+    <string name="main_avg_timepercharge_label2">Battery Life:</string>
+    <string name="main_avg_timepercharge_text_active">%1$s (%2$s Active)</string>
+    <string name="main_avg_timepercharge_text_standby">%1$s (%2$s Standby)</string>
+    <string name="main_avg_screenon_label">Screen On:</string>
+    <string name="main_avg_screenon_text">%1$s (%2$s Max)</string>
+    <string name="main_avg_chargetime_label">Charge Time:</string>
+    <string name="main_avg_chargetime_text">%1$s AC / %2$s USB</string>
+    <string name="main_kitkat_nostats_title2">Enable More Stats with Root Companion App</string>
+    <string name="main_kitkat_nostats_helper_needed2">You can enable access to more statistics if you
+        have Root access by installing the GSam Root Companion app.  This gives you access to detailed
+        wakelock, sensor usage, and many other statistics.\n
+        \nIf you do not have Root, or do not know what this means, don\'t worry about it.  GSam will
+        function just fine without it.\n
+        \nSee <a href="http://goo.gl/WBXJ6o">http://goo.gl/WBXJ6o</a> for more information.</string>
+    <string name="main_kitkat_nostats_helper_not_installed_correctly">The Root Companion application is not installed correctly in /system/priv-app.  Please launch the application and verify it is correctly installed.</string>
+	<string name="main_kitkat_nostats_launch_companion">Launch Root Companion</string>
+	<string name="main_kitkat_nostats_install_companion">Install Root Companion</string>
+	<string name="main_phone_permission_title">Grant Phone Permission</string>
+	<string name="main_phone_permission_text">GSam can track the power usage of your phone by monitoring its state and signal strength.&lt;BR/>&lt;BR/>Granting access to the &lt;B>Phone (make and manage phone calls)&lt;/B> permission will result in more accurate statistics."</string>
+
+    <!-- ADB Connect Wizard -->
+    <string name="adb_start_text">GSam can access more stats if you give it the special BATTERY_STATS permission.  You just need to enable it once!</string>
+    <string name="adb_start_text2">
+        &#8212; &lt;b>Have Root?&lt;/b>  Let GSam add the needed permission automatically by running the
+        following command: &lt;i>pm grant %1$s android.permission.BATTERY_STATS&lt;/i>
+    </string>
+    <string name="adb_start_button_root">Grant Access With Root</string>
+    <string name="adb_start_text3">
+        &#8212; &lt;b>No Root?&lt;/b>  Connect to a computer and use the ADB command to enable access.
+    </string>
+    <string name="adb_start_button">Show Me How</string>
+    <string name="adb_get_title">Get ADB</string>
+    <string name="adb_get_text">
+        Download and install ADB on your computer.  You can find the application and instructions here:
+        &lt;br/>&lt;br/>
+        &#8212; Get just the command line tools from Google (&lt;a href="https://goo.gl/4WJatw">https://goo.gl/4WJatw&lt;/a>)
+        &lt;br/>&lt;br/>
+        &#8212; Or get a simple installer (Windows Only) from XDA (&lt;a href="https://goo.gl/k0KbZZ">https://goo.gl/k0KbZZ&lt;/a>)
+    </string>
+    <string name="adb_get_button">OK, I\'ve got ADB Installed!</string>
+    <string name="adb_developer_title">Enable USB Debugging</string>
+    <string name="adb_developer_text">To enable ADB on your device, you\'ll first need to enable USB Debug.  You can disable debugging once everything is complete.</string>
+    <string name="adb_developer_text2">&lt;a href="">Launch Settings -> About&lt;/a>&lt;br></string>
+    <string name="adb_developer_text2_click">Click on the "Build Number" entry 7 times until it tells you that you are a developer</string>
+    <string name="adb_developer_text3">&lt;a href="">Launch Settings -> Developer Options"&lt;/a>&lt;br></string>
+    <string name="adb_developer_text3_click">Select "USB Debugging</string>
+    <string name="adb_developer_error_not_developer">Enable Developer Options first</string>
+    <string name="adb_developer_error_not_enabled">Enable USB Debugging first</string>
+    <string name="adb_developer_button">OK, I\'ve enabled USB Debugging!</string>
+    <string name="adb_connect_title">Connect and Verify ADB</string>
+    <string name="adb_connect_text">
+        &#8212; Connect your phone to your computer via USB&lt;br/>&lt;br/>
+        &#8212; Make sure you select &lt;i>&lt;b>Allow USB debugging&lt;/b>&lt;/i> on any popup message on your phone&lt;br/>&lt;br/>
+        &#8212; Verify ADB is active by opening up a command shell on your computer and running &lt;i>&lt;b>adb devices&lt;/b>&lt;/i>
+    </string>
+    <string name="adb_connect_text2">
+        C:\\> adb devices&lt;br/>
+        List of devices attached&lt;br/>
+        85B7N26304004631	device&lt;br/>
+        C:\\>
+    </string>
+    <string name="adb_connect_button">OK, ADB is active!</string>
+    <string name="adb_grant_title">Grant GSam Access</string>
+    <string name="adb_grant_text">Grant GSam access to the BATTERY_STATS permission using the followng ADB command (all on one line).  This setting should stick through the life of the application install.</string>
+    <string name="adb_grant_text2">
+        C:\\> adb shell pm grant %1$s android.permission.BATTERY_STATS&lt;br/>
+        C:\\>
+    </string>
+    <string name="adb_grant_button">All Done!</string>
+    <string name="adb_grant_error_not_granted">Permission still not granted.  Try again&#8230;</string>
+    <string name="adb_grant_success">Congratulations &#8212; Permission Granted!\nYou can disable USB Debugging now if you wish.</string>
+    <string name="adb_root_progress_title">Please Wait&#8230;</string>
+    <string name="adb_root_progress_msg">Granting GSam BATTERY_STATS permission&#8230;\n\nMake sure you accept any superuser requests.</string>
+    <string name="adb_root_error_no_rights">Unable to obtain supersuser authority.  Do you have root?  Did you give GSam authority?</string>
+    <string name="adb_root_error_dlg_title">An Error Occurred</string>
+    <string name="adb_root_success">Congratulations &#8212; Permission Granted!</string>
+
+    <!-- Detail Screens (App Sucker & Wifi/Radio/Screen Usage) -->
+    <string name="process_suck_mon_title_prefix_app">App Detail</string>
+    <string name="process_suck_mon_title_prefix_wifi">Wifi Detail</string>
+    <string name="process_suck_mon_title_prefix_radio">Radio Detail</string>
+    <string name="process_suck_mon_title_prefix_screen">Screen Detail</string>
+    <string name="process_suck_mon_title_prefix_wakelock">Wakelock Detail</string>
+    <string name="appdetail_usagedetail">Usage Details</string>
+    <string name="appdetail_processname">Process Name</string>
+    <string name="appdetail_included_packages">Included Packages</string>
+    <string name="appdetail_included_processes">Included Processes</string>
+    <string name="appdetail_seconds">%1$01ds</string>
+    <string name="appdetail_minutes">%1$01dm %2$01ds</string>
+    <string name="appdetail_minutes_decimal">%1$sm</string>
+    <string name="appdetail_days">%1$01dd %2$01dh %3$01dm</string>
+    <string name="appdetail_days_twolevels">%1$01dd %2$01dh</string>    
+    <string name="appdetail_days_twolevels_decimal">%1$01dd %2$sh</string>
+    <string name="appdetail_hours">%1$01dh %2$01dm %3$01ds</string>
+    <string name="appdetail_hours_twolevels">%1$01dh %2$01dm</string>
+    <string name="appdetail_hours_twolevels_decimal">%1$01dh %2$sm</string>
+    <string name="appdetail_details_button">Manage</string>
+    <string name="appdetail_details_button_wakelocks">Google Me</string>    
+    <string name="appdetail_details_adjustpower">Power Savings Hint</string>
+    <string name="appdetail_details_adjust_wifi">Turn off Wi-Fi when not in use using the Wi-Fi Settings button above.</string>
+    <string name="appdetail_details_adjust_wifi_button">Wi-Fi Settings</string>
+    <string name="appdetail_details_adjust_wifi_failedintent">Unable to launch wifi settings</string>
+    <string name="appdetail_details_adjust_screen">Lower screen brightness and screen timeout using the Display Settings button above.</string>
+    <string name="appdetail_details_adjust_screen_button">Display Settings</string>
+    <string name="appdetail_details_adjust_screen_failedintent">Unable to launch display settings</string>
+    <string name="detail_menu_export">Export</string>
+    <string name="detail_menu_export_dlg_title">Export Screen (Text) Data Using</string>
+    <string name="detail_menu_export_subject">GSam Labs - Battery Monitor - Export Data</string>    
+    <string name="appdetail_appuid">App UID:</string>  
+    <string name="appdetail_audio">Audio On:</string>  
+    <string name="appdetail_bright">Bright:</string>  
+    <string name="appdetail_bytesrec">Bytes Received:</string>  
+    <string name="appdetail_bytessent">Bytes Sent:</string>  
+    <string name="appdetail_cpu">CPU Usage:</string>  
+    <string name="appdetail_cpu_backgroundonly">CPU Usage (Background Only):</string>  
+    <string name="appdetail_dark">Dark:</string>  
+    <string name="appdetail_data_enabled">Data Enabled:</string>  
+    <string name="appdetail_dim">Dim:</string>  
+    <string name="appdetail_discharge_whileonoff">Discharge While On/Off:</string>  
+    <string name="appdetail_gps">GPS:</string>  
+    <string name="appdetail_high">High - %s:</string>
+    <string name="appdetail_keepawake">Keep Awake:</string>  
+    <string name="appdetail_light">Light:</string>  
+    <string name="appdetail_low">Low - 0:</string>  
+    <string name="appdetail_med">Medium - %s:</string>
+    <string name="appdetail_medium">Medium:</string>  
+    <string name="appdetail_numwakes">Number of times waking device:</string>  
+    <string name="appdetail_pct_power">\ \ \ \ \ \ \ \ % Power</string>
+    <string name="appdetail_pct_power_nospace">% Power</string>
+    <string name="appdetail_pct_time">% Time</string>
+    <string name="appdetail_phoneon">Phone Radio On:</string>  
+    <string name="appdetail_pwr_sysdata">Power For System Data:</string>  
+    <string name="appdetail_received">Received:</string>  
+    <string name="appdetail_received_wifimobile">Received (Wifi / Mobile):</string> 
+    <string name="appdetail_scanning">Scanning For Signal:</string>  
+    <string name="appdetail_screen_brightness">Screen Brightness:</string>  
+    <string name="appdetail_screenon">Screen On:</string>  
+    <string name="appdetail_sensor_accelerometer">Accelerometer:</string>  
+    <string name="appdetail_sensor_gravity">Gravity:</string>  
+    <string name="appdetail_sensor_gyroscope">Gyroscope:</string>  
+    <string name="appdetail_sensor_light">Light:</string>  
+    <string name="appdetail_sensor_lin_accel">Linear Acceleration:</string>  
+    <string name="appdetail_sensor_magfield">Magnetic Field:</string>  
+    <string name="appdetail_sensor_orientation">Orientation:</string>  
+    <string name="appdetail_sensor_pressure">Pressure:</string>  
+    <string name="appdetail_sensor_proximity">Proximity:</string>  
+    <string name="appdetail_sensor_relhum">Relative Humidity:</string>  
+    <string name="appdetail_sensor_rotvector">Rotational Vector:</string>  
+    <string name="appdetail_sensor_temp">Temperature:</string>  
+    <string name="appdetail_sent">Sent:</string>  
+    <string name="appdetail_sent_wifimobile">Sent (Wifi / Mobile):</string>  
+    <string name="appdetail_signal_stregth">Signal Strength:</string>
+    <string name="appdetail_total_appssystem">Total (Apps / System):</string> 
+    <string name="appdetail_video">Video On:</string>  
+    <string name="appdetail_wakelocks">Number of Wake Locks:</string>  
+    <string name="appdetail_wifiactive">Wifi Active:</string>  
+    <string name="appdetail_wifion">Wifi On:</string>      
+    <string name="appdetail_bytes">%d bytes</string>
+    <string name="appdetail_mb">%.2f MB</string>           
+    <string name="appdetail_kb">%.2f KB</string>   
+    <string name="appdetail_totaltime">Total Time (including awake):</string>
+    <string name="appdetail_select_package">Select Package To Manage</string>
+    <string name="appdetail_heldawake_title">Held Awake / Doze</string>
+    <string name="appdetail_deep_sleep_label">Deep Sleep - CPU Freq 0:</string>
+    <string name="appdetail_doze_num_label">Doze Sessions:</string>
+    <string name="appdetail_doze_maint_label">Doze Maintenance:</string>
+    <string name="appdetail_discharge_screen_off_label">Discharge Screen Off:</string>
+    <string name="appdetail_avg_doze_label">Doze Time:</string>
+    <string name="appdetail_avg_doze_light_label">Doze Time (Light):</string>
+    <string name="appdetail_avg_doze_deep_label">Doze Time (Deep):</string>
+    <string name="appdetail_light_doze_header">Light</string>
+    <string name="appdetail_deep_doze_header">Deep</string>
+    <string name="appdetail_screen_off_label">% Screen Off:</string>
+    <string name="appdetail_doze_count_value">%1$s (%2$d maint)</string>
+
+    <!-- Change Log - actual change content isn't translated -->
+    <string name="changelog_full_title">What\'s New</string>
+    <string name="changelog_title">What\'s New</string>
+    <string name="changelog_ok_button">OK</string>
+
+    <!-- Misc. -->
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="ok">OK</string>
+    <string name="error">An error occurred</string>
+    
+    <!-- Copied from the original BATTERY_STATS permission description -->
+    <string name="permlab_batteryStats">read battery statistics</string>
+    <string name="permdesc_batteryStats">Allows an application to read the current low-level
+        battery use data.  May allow the application to find out detailed information about
+        which apps you use.</string>
+
+    <!-- Charts -->
+    <string name="main_chart_showtemp">Temperature</string>
+    <string name="main_chart_showother">Others</string>
+    <string name="main_chart_showradio">Phone Signal</string>
+    <string name="main_chart_showrate">Rate of Change</string>
+    <string name="main_chart_showcpu">CPU</string>
+    <string name="chart_menu_batthistory">Battery History Chart</string>
+    <string name="chart_menu_battdischarge">Power vs Percent Chart</string>
+    <string name="notification_chargecomplete">Charge Complete</string>
+    <string name="notification_battcharging">Battery Charging (%1s%%)</string>
+    <string name="notification_battlow">Battery Low (%1s%%)</string>
+    <string name="notification_batthot_f">Warning - Hot Battery (%.1f\u00B0F)</string>
+    <string name="notification_batthot_c">Warning - Hot Battery (%.1f\u00B0C)</string>
+    <string name="notification_battovervoltage">Warning - Battery Over Voltage (%.1f V)</string>
+    <string name="chart_active">Active</string>
+    <string name="chart_batt_history">Battery History (%1$s)</string>
+    <string name="chart_batt_percent">Battery %</string>
+    <string name="chart_charging">Charging</string>
+    <string name="chart_dim">Dim</string>
+    <string name="chart_gps">GPS</string>
+    <string name="chart_high">High</string>
+    <string name="chart_incall">In Call</string>
+    <string name="chart_low">Low</string>
+    <string name="chart_max">Max</string>
+    <string name="chart_med">Med</string>
+    <string name="chart_screen">Screen</string>
+    <string name="chart_signal">Phone Signal</string>
+    <string name="chart_rateofchange">\u0394 %/Hour</string>
+    <string name="chart_tempc">Battery Temperature \u00B0C</string>
+    <string name="chart_tempf">Battery Temperature \u00B0F</string>
+    <string name="chart_timeformat">HH:mm</string>
+    <string name="chart_unknown">Unknown</string>
+    <string name="chart_wifi">Wifi</string>
+    <string name="chart_cpu_mhz">CPU Avg Freq (GHz)</string>
+    <string name="chart_cpu_util">CPU Util %</string>
+    <string name="chart_idle">Doze</string>
+    
+    <!-- About -->
+    <string name="about_app_name">About GSam Battery Monitor</string>
+    <string name="about_version">Version %1s</string>    
+    <string name="about_copyright">\u24d2 GSam Labs 2016</string>
+    <string name="about_chartengine">Chart Engine by AChartEngine.org</string>
+    <string name="about_icons">App Icons by &lt;a href="https://plus.google.com/photos/117250163221109087714/albums/5509475934074997921"&gt;Marius Bozgan&lt;/a&gt;</string>
+    <string name="about_translations">Translations:</string>
+    
+    <!-- DashClock Widget Extension -->
+    <string name="dashclock_description">Show battery statistics including time left, drain per hour, and more.</string>
+    <string name="dashclock_active_standby">%1$s Active, %2$s Standby</string>
+    <string name="dashclock_delta_per_hour_short">\u0394 %1$.1f%%/h</string>
+    <string name="dashclock_delta_per_hour_short_full">Full</string>
+    <string name="dashclock_delta_per_hour_charging">\u0394 %1$.1f%%/h - Charging</string>  
+    <string name="dashclock_delta_per_hour_discharging">\u0394 %1$.1f%%/h - Discharging</string>  
+    <string name="dashclock_to_empty">%1$s to empty</string>  
+    <string name="dashclock_to_full">%1$s to full</string>
+    <string name="dashclock_pref_show_used">Show amount used</string>
+    <string name="dashclock_pref_show_remaining_time">Show time remaining</string>
+    <string name="dashclock_pref_show_active_standby">Show active and standby times</string>
+    <string name="dashclock_pref_show_temp_voltage">Show temperature and voltage</string>
+    <string name="dashclock_pref_show_screen_on_time">Show screen on time</string>
+    <string name="dashclock_settings">GSam Extension Settings</string>
+    
+    <!-- Translations & Translators -->   
+    <string name="lang_default">Default System Language</string>        
+    <string name="translator_anonymous">Anonymous</string>
+    <!-- NOTE: If they would like credit in the About screen, Translators can optionally put a name & optional HTML link.  You can have > 1 name, just use &lt;BR&gt; The key should be in the form 'translator_lang'-->
+    <string name="translator_ru">Dmitry Chernogaev &lt;a href=\"http://forum.xda-developers.com/member.php?u=4563466\"&gt;(gaich)&lt;/a&gt;</string>        
+    <string name="translator_fr">Jaworski Johan</string>
+    <string name="translator_it">Fabio Abbà &lt;BR&gt; AlphaUMi</string>     
+    <string name="translator_hu">István Kriskó (Stefi)</string>    
+    <string name="translator_cs">Matěj Trakal (&lt;a href=\"http://mtrakal.cz\"&gt;mtrakal&lt;/a&gt;)</string>
+    <string name="translator_sv">Pontus Edgren  &lt;BR&gt; Göran Helsingborg</string>
+    <string name="translator_nl">ArTsLeOpS</string>
+    <string name="translator_iw">Michael Sandler (&lt;a href=\"http://sandler.in\"&gt;mich&lt;/a&gt;)</string>
+    <string name="translator_zh_CN">Gavin Fang &lt;BR&gt; myliyifei修补</string>  
+    <string name="translator_tr">Saldıray Günal</string>
+    <string name="translator_pl">www.cvxcvx.pl</string>
+    <string name="translator_de">Jan Fortein, Marcus Barkhahn</string>
+    <string name="translator_es">Carlos Salazar (&lt;a href=\"http://about.me/carlos_salazar\"&gt;Ulric&lt;/a&gt;) &lt;BR&gt;
+        Broquen (&lt;a href=\"http://forum.xda-developers.com/member.php?u=2695779\"&gt;broquen&lt;/a&gt;)</string>
+    <string name="translator_uk">Yaroslav Brukh</string>
+    <string name="translator_pt_PT">mandriva91</string>
+    <string name="translator_zh_TW">Andy~★</string>
+    <string name="translator_hy">Hrant Ohanyan »» &lt;a href=\"http://haysoft.org\"&gt;HaySoft&lt;/a&gt;</string>
+    <string name="translator_ca">Josep Rey Cases</string>
+    <string name="translator_sk">Pavol Šrank</string>
+    <string name="translator_sr">Милован Кушаковић</string>
+    <string name="translator_fi">Sami Kuusisto</string>
+
+    <!-- Only Applicable to Paid/Pro Version (or marketing of said version) -->
+    <string name="appdetail_details_adjust_screen_market_bsd_title">Is Your Screen Too Bright?</string>
+    <string name="appdetail_details_adjust_screen_market_bsd_msg">If you have trouble reading at night because your screen is too bright, check out GSam Screen Dimmer.  It lets you reduce your brightness settings below what is normally allowed, making for a much more pleasant night-time read!\n\nDon\'t worry, you won\'t see this message again.</string>
+    <string name="preferences_send_anon_stats_buypro_title">Go Pro!</string>
+    <string name="preferences_send_anon_stats_buypro_msg">The free version of the Battery Monitor will not let you turn off ads if you choose to not allow anonymous usage statistics.\n\nThe Pro version does not include ads, and will let you turn off anonymous usage statistics.</string>
+    <string name="menu_seeotherapps">See Other Apps by GSam Labs</string>
+    <string name="menu_gopro">Upgrade To Pro</string>
+    <string name="menu_gopro_nook">Purchase</string>
+    <string name="menu_goprokindle">Upgrade To The Kindle Fire Edition</string>
+    <string name="nook_gopro_title">Trial Expired</string>
+    <string name="nook_gopro_msg">Your trial of the battery monitor has expired.  Please purchase the full edition.  You can continue to use the battery monitor, however it will run in Free mode which removes a number of features and optimizations.</string>
+    <string name="nook_gopro_ok">Buy Full Version</string>
+    <string name="nook_gopro_cancel">Continue In Free Mode</string>
+    <string name="main_market_pro_title">Thank You For Using GSam Battery Monitor - Free</string>
+    <string name="main_market_pro_msg">Did you know there is a Tablet optimized professional version of GSam Battery Monitor?  Look for it in the market.\n\nDon\'t worry, you won\'t see this message again.</string>
+    <string name="main_market_pro_msg_kindle">Did you know there is a Kindle Fire optimized version of GSam Battery Monitor?  Look for it in the Appstore.\n\nDon\'t worry, you won\'t see this message again.</string>
+    <string name="main_market_pro_ok">Take A Look</string>
+    <string name="main_market_pro_cancel">No Thank You</string>
+    <string name="main_invalid_license_title">Invalid License</string>
+    <string name="main_invalid_license_msg">Your license to this application appears to not be valid.  The Battery Monitor will continue to operate in it\'s Free mode.  If you feel this is a mistake, please check your purchase.</string>
+    <string name="main_invalid_license_ok">Check My Purchase</string>
+    <string name="main_invalid_license_cancel">Continue</string>    
+    <string name="about_invalidlicense">You do not have a valid license.  GSam Battery Monitor will continue to run in Free mode.  If you feel this is a mistake, please contact the developer with your Google Purchase ID</string>
+
+    <!-- Action Bar - From a third party library, most of these aren't used but are included for completeness. -->
+    <string name="abs__action_bar_home_description">Navigate home</string>
+    <string name="abs__action_bar_up_description">Navigate up</string>
+    <string name="abs__action_menu_overflow_description">More options</string>
+    <string name="abs__action_mode_done">Done</string>
+    <!-- Title for a button to expand the list of activities in ActivityChooserView [CHAR LIMIT=25] -->
+    <string name="abs__activity_chooser_view_see_all">See all...</string>
+    <!-- Title default for a dialog showing possible activities in ActivityChooserView [CHAR LIMIT=25] -->
+    <string name="abs__activity_chooser_view_dialog_title_default">Select activity</string>
+    <!-- Title for a dialog showing possible activities for sharing in ShareActionProvider [CHAR LIMIT=25] -->
+    <string name="abs__share_action_provider_share_with">Share with...</string>
+    <!-- Description of the shwoing of a popup window with activities to choose from. [CHAR LIMIT=NONE] -->
+    <string name="abs__activitychooserview_choose_application">Choose an application</string>
+    <!-- Description of the choose target button in a ShareActionProvider (share UI). [CHAR LIMIT=NONE] -->
+    <string name="abs__shareactionprovider_share_with">Share with</string>
+    <!-- Description of a share target (both in the list of such or the default share button) in a ShareActionProvider (share UI). [CHAR LIMIT=NONE] -->
+    <string name="abs__shareactionprovider_share_with_application">Share with <xliff:g id="application_name" example="Bluetooth">%s</xliff:g></string>
+</resources>
